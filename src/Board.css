@@ -33,6 +33,7 @@ table tr:first-child td:last-child {
 
 .neon-orange {
   font-family: neon;
+  display: inline-block;
   color: #FB4264;
   font-size: 9vw;
   line-height: 9vw;
@@ -45,6 +46,7 @@ table tr:first-child td:last-child {
 .neon-blue {
   font-family: neon;
   color: #426DFB;
+  display: inline-block;
   font-size: 9vw;
   line-height: 9vw;
   text-shadow: 0 0 3vw #2356FF;

@@ -100,7 +100,12 @@ class Board extends Component {
 
   render() {
     if(this.state.hasWon){
-      return <h1>You win!</h1>
+      return (
+        <div className='winner'>
+          <div className='neon-orange'>YOU</div>
+          <div className='neon-blue'>WIN!</div>
+        </div>
+      )
     }
 
     const tableBoard = [];
@@ -114,12 +119,15 @@ class Board extends Component {
     }
 
     return (
-      <table className='Board'>
-        <tbody>
-          {tableBoard}
-        </tbody>
-      </table>
-
+      <div>
+        <div className='neon-orange'>Lights</div>
+        <div className='neon-blue'>Out</div>
+        <table className='Board'>
+          <tbody>
+            {tableBoard}
+          </tbody>
+        </table>
+      </div>
     )
   }
 }
